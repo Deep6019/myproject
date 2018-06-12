@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lovedeep Singh C0704554</title>
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+	<style>
+		body{
+			font-size: 17px;
+			font-family: arial;
+			background: grey;
+			line-height: 1.5em;
+		}
+		header{
+			background:brown;
+			color:black;
+			padding:20px;
+			text-align: center;
+			border-bottom: 4px #000 solid;
+			margin-bottom: 10px;
+		}
+		#container{
+			width:90%;
+			margin:auto;
+			padding:10px;
+		}
+		#box{
+			background:brown;
+			color:black;
+			
+			height:90px;
+			padding:40px;
+			text-align:center;
+			position:relative;
+		}
+		img{
+		float:right;
+		
+		}
+		ul{
+		text-align:left;
+		line-height:80px;
+	
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Lovedeep Singh c0704554</h1>
+	</header>
+	<div id="container">
+		<button id="btnFadeOut">Fade Out</button>
+		<button id="btnFadeIn">Fade In</button>
+		<button id="btnFadeTog">Fade Toggle</button>
+		
+
+		<hr>
+
+		<button id="btnSlideUp">Slide Up</button>
+		<button id="btnSlideDown">SlideDown</button>
+		<button id="btnSlideTog">Slide Toggle</button>
+		<button id="btnStop">Stop</button>
+		<hr>
+
+		<div id="box"><h5>Course- Computer programmer(emerging technologies)facts  about effects and animations</h5>
+		<h3> There are My some hobies</h3> <br> <p> <ul><li><b>Individual Sports (Marathon Running) </li>
+<li>Team Sports</li>
+<li>Extreme Sports (Motocross)  </li>
+<li>Tech Hobbies (Computing)</li>
+<li>Puzzles (Crosswords) - </li>
+<li>Games (Mini militia) </li>
+<li>Social Hobbies (Volunteer) -</b></li></ul></div>
+<img src="lovephoto.jpg" alt="lovedeep" width="700" height="600">
+
+		<hr>
+
+		
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$('#btnFadeOut').click(function(){
+				$('#box').fadeOut(2500, function(){
+					$('#btnFadeOut').text('Fadeout');
+				});
+			});
+			$('#btnFadeIn').click(function(){
+				$('#box').fadeIn(2500);
+			});
+			$('#btnFadeTog').click(function(){
+				$('#box').fadeToggle(1500);
+			});
+			$('#btnSlideDown').click(function(){
+				$('#box').slideDown(2500);
+			});
+			$('#btnSlideUp').click(function(){
+				$('#box').slideUp(2500);
+			});
+			$('#btnSlideTog').click(function(){
+				$('#box').slideToggle(2500);
+			});
+			$('#btnStop').click(function(){
+				$('#box').stop();
+				
+	
+			});
+		});
+	</script>
+</body>
+</html>
