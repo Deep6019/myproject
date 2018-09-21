@@ -1,0 +1,124 @@
+<!Doctype.html>
+<html>
+<head>
+<title> CSS Example</title>
+<style type="text/css">
+
+
+#wrapper{
+ border-width: 1px;
+ border-style: dashed;
+ border-color: red;}
+ 
+ #mainHeader{
+ background-color: blue;
+ height: 100px;}
+ 
+ #mainMenu{
+ background-color: red;
+ height: 40px;}
+ 
+ 
+ #mainSection{
+ background-color: yellow;
+ padding: 10px;}
+ 
+ #biography{
+ background-color: green;}
+ 
+ #footer{
+ background-color: teal;
+ height: 80px;
+ }
+ 
+ 
+ width: 960px;
+ margin: 0 auto;
+ 
+ 
+ 
+ 
+ #mainMenu ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ }
+
+#mainMenu ul, #footer ul{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ }
+
+#mainMenu ul li, #footer ul li{
+ display: inline;
+ float: left;
+ }
+
+#mainMenu ul li a, #footer ul li a{
+ display: block;
+ padding: 10px 10px;
+ }
+ 
+ #mainMenu ul li a:hover, #footer ul li a:hover{
+ background-color: gray;
+ } 
+
+/*
+Selector {
+Property: Value;
+} */
+</style>
+</head>
+
+<body>
+ <div id="wrapper">
+ <header id="mainHeader">
+ <h1>
+ <a id="top">Isaac Newton</a>
+ </h1>
+ <h2>Scientist Code : 000001</h2>
+ </header>
+ <nav id="mainMenu">
+ <ul>
+ <li><a href=" a link to my folder1">My folder 1</a></li>
+ <li><a href=" a link to my folder1">My folder 2</a></li>
+ <li><a href=" a link to my folder1">My folder 2</a></li>
+ <li><a href=" a link to my folder1">My folder 2</a></li>
+ </ul>
+ </nav>
+ <section id="mainSection">
+
+ </section>
+ <article id="biography">
+ <img src="newton.jpg" alt="issac newton" height="100" width="100">
+ <p>
+ Sir Isaac Newton was born according to the Julian calendar (in use in England at the time) on
+Christmas Day, 25 December 1642 (NS 4 January 1643[1]), at Woolsthorpe Manor in Woolsthorpe-byColsterworth,
+a hamlet in the county of Lincolnshire. His father, also named Isaac Newton, had died
+three months before. Born prematurely, he was a small child; his mother Hannah Ayscough reportedly
+said that he could have fit inside a quart mug.[8] When Newton was three, his mother remarried and
+went to live with her new husband, the Reverend Barnabas Smith, leaving her son in the care of his
+maternal grandmother, Margery Ayscough. The young Isaac disliked his stepfather and maintained some
+enmity towards his mother for marrying him, as revealed by this entry in a list of sins committed up to
+the age of 19: "Threatening my father and mother Smith to burn them and the house over them."
+Newton's mother had three children from her second marriage.
+ 
+
+ </article>
+ <footer id="footer">
+ <ul>
+ <li><a href=" a link to my folder1">My folder 1</a></li>
+ <li><a href=" a link to my folder1">My folder 2</a></li>
+ <li><a href=" a link to my folder1">My folder 2</a></li>
+ <li><a href=" a link to my folder1">My folder 2</a></li>
+ </ul>
+ <br>
+ 
+ <p > &copy; 2016 - Isaac Newton </p>
+
+ </footer>
+
+ </div>
+</body>
+</html>
